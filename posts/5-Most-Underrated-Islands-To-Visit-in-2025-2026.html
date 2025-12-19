@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chasing the Golden Hour on Italy's Amalfi Coast | TravelIdeasDaily</title>
+    <meta name="description" content="A deep dive into the magic of the Amalfi Coast. Discover Positano, hidden lemon groves, and the best travel tips for Italy's most cinematic coastline.">
+    <meta name="author" content="Elena - TravelIdeasDaily">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#064e3b',
+                        pop: '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-main: #064e3b;
+            --pop-color: #d97706;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .prose p {
+            margin-bottom: 1.75rem;
+            line-height: 1.9;
+            font-size: 1.15rem;
+            color: #1e293b;
+        }
+        .dark .prose p {
+            color: #cbd5e1;
+        }
+
+        .prose blockquote {
+            border-left: 5px solid var(--pop-color);
+            padding-left: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin: 3rem 0;
+            color: #0f172a;
+        }
+        .dark .prose blockquote {
+            color: #f1f5f9;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-amber-100 dark:selection:bg-amber-900/40">
+
+    <nav class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="bg-emerald-900 dark:bg-emerald-700 p-2 rounded-lg group-hover:rotate-12 transition-transform">
+                        <i class="fas fa-compass text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tight serif text-emerald-900 dark:text-emerald-500">TravelIdeasDaily</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest items-center">
+                    <a href="#" class="text-slate-700 dark:text-slate-300 hover:text-emerald-900 dark:hover:text-emerald-400 transition">Destinations</a>
+                    <a href="#" class="text-slate-700 dark:text-slate-300 hover:text-emerald-900 dark:hover:text-emerald-400 transition">Travel Tips</a>
+                    <button id="dark-mode-toggle" class="p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    <button class="bg-pop hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest shadow-lg shadow-amber-600/20 transition-all">Subscribe</button>
+                </div>
+
+                <div class="flex md:hidden items-center space-x-2">
+                    <button id="dark-mode-toggle-mobile" class="p-2 text-slate-900 dark:text-white" aria-label="Toggle Dark Mode Mobile"><i class="fas fa-moon dark:hidden"></i><i class="fas fa-sun hidden dark:block"></i></button>
+                    <button class="text-2xl text-slate-900 dark:text-slate-100" onclick="toggleMenu()" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 p-6 space-y-4">
+            <a href="#" class="block font-bold text-slate-900 dark:text-white border-b border-slate-50 dark:border-slate-800 pb-2">Destinations</a>
+            <a href="#" class="block font-bold text-slate-900 dark:text-white border-b border-slate-50 dark:border-slate-800 pb-2">Travel Tips</a>
+            <button class="w-full bg-pop text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs">Subscribe</button>
+        </div>
+    </nav>
+
+    <header class="bg-white dark:bg-slate-900 py-12 md:py-24 transition-colors">
+        <div class="max-w-4xl mx-auto px-4 text-center animate-fade-in">
+            <div class="flex items-center justify-center gap-4 text-xs font-black uppercase tracking-[0.3em] text-amber-600 dark:text-amber-500 mb-8">
+                <span>Adventure</span>
+                <span class="text-slate-300 dark:text-slate-700">•</span>
+                <span>8 Min Read</span>
+                <span class="text-slate-300 dark:text-slate-700">•</span>
+                <span>Italy</span>
+            </div>
+            <h1 class="text-4xl md:text-7xl font-bold text-slate-900 dark:text-white leading-[1.1] mb-10 serif">5 Most Underrated Islands To Visit in 2025/2026</h1>
+            
+            <div class="flex items-center justify-center gap-4 mb-16">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150" alt="Elena" class="w-14 h-14 rounded-full border-2 border-amber-500 p-0.5">
+                <div class="text-left">
+                    <p class="text-sm font-black text-slate-900 dark:text-white">Written by Elena</p>
+                    <time class="text-xs text-slate-500 font-medium" datetime="2024-06-15">Published Dec 21, 2025</time>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 animate-fade-in" style="animation-delay: 0.2s;">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=1600" alt="Positano View" class="w-full h-[50vh] md:h-[75vh] object-cover rounded-[2.5rem] shadow-2xl">
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16 md:py-24 flex flex-col lg:flex-row gap-20">
+        
+        <article class="lg:w-2/3 prose dark:prose-invert max-w-none">
+            <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                <p class="text-xl md:text-2xl leading-relaxed font-medium first-letter:text-8xl first-letter:font-black first-letter:text-emerald-900 dark:first-letter:text-emerald-500 first-letter:mr-4 first-letter:float-left first-letter:serif text-slate-800 dark:text-slate-200">
+                    Everyone is going to Bali. Or Santorini. Or the Maldives. And that’s fine, if you like fighting for a sun lounger and paying triple for a cocktail. But the ocean is huge. There are thousands of rocks floating out there that offer the same white sand and blue water without the influencer crowds. As we head into 2025, the best travel isn't about hitting the "top 10" lists everyone else is reading. It's about finding spots that still feel real. Quiet. Cheaper. Places where the locals are actually happy to see you. Here are ten islands where you can still find a bit of adventure before the rest of the world catches on.
+                </p>
+
+                
+
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 dark:text-emerald-400 serif mt-16 mb-6">1. São Tomé and Príncipe, Africa</h2>
+
+                <div class="my-16 overflow-hidden rounded-3xl shadow-xl">
+                    <img src="../img/pico-cao-grande-volcanic-spire-sao-tome-principe.jpg" class="img-fluid" alt="Pico Cão Grande volcanic rock formation surrounded by tropical rainforest in São Tomé and Príncipe" caption="Pico Cão Grande, the dramatic volcanic landmark rising above the rainforests of São Tomé and Príncipe.">
+                    <p class="bg-slate-100 dark:bg-slate-900 p-4 text-xs font-bold text-slate-500 text-center uppercase tracking-widest">A quiet morning in Sorrento</p>
+                </div>
+
+                <p>This place is barely on the map for most people. Floating in the Gulf of Guinea, it’s a two-island nation that feels like Jurassic Park. We’re talking volcanic spikes, jungle that swallows everything, and beaches that look fake. It’s wild. The Portuguese influence is still there in the crumbling architecture, but the vibe is distinctly African. You don't come here for all-inclusive resorts. You come to hike through rainforests that haven't changed in centuries. Oh, and the chocolate? Incredible. They grow cacao everywhere. You can visit the plantations, see how it's made, and eat your weight in the dark stuff.</p>
+
+            </div>
+
+
+            <!--section 1-->
+
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 dark:text-emerald-400 serif mt-16 mb-6">2. Flores, Indonesia </h2>
+
+                <div class="my-16 overflow-hidden rounded-3xl shadow-xl">
+                     <img src="../img/pink-beach-flores-indonesia.jpg" class="img-fluid" alt="Pink sand beach with turquoise water on Flores Island, Indonesia" caption="Pink Beach on Flores is one of Indonesia’s rare natural wonders, famous for its rosy-colored sand">
+                    <p class="bg-slate-100 dark:bg-slate-900 p-4 text-xs font-bold text-slate-500 text-center uppercase tracking-widest">A quiet morning in Sorrento</p>
+                </div>
+
+                <p>Bali is a parking lot these days. Go east. Flores is long, rugged, and feels like the frontier. The main draw? Dragons. Actual dragons. The Komodo National Park is right next door, and staring down a Komodo dragon is something you don't forget. But stay for the rest of it. The diving is world-class—manta rays, sharks, pristine reefs. Inland, the Kelimutu volcano has three crater lakes that change color like mood rings depending on the season. It’s eerie and beautiful. The villages are traditional, the roads are winding, and the adventure is real</p>
+
+            </div>
+
+
+            <!--section 1-->
+
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 dark:text-emerald-400 serif mt-16 mb-6">3. Vis, Croatia</h2>
+
+                <div class="my-16 overflow-hidden rounded-3xl shadow-xl">
+                     <img src="../img/stiniva-beach-vis-island.jpg" class="img-fluid" alt="Stiniva Beach hidden between limestone cliffs on Vis Island, Croatia" caption="Stiniva Beach is a secluded cove framed by towering cliffs and crystal-clear Adriatic waters">
+                    <p class="bg-slate-100 dark:bg-slate-900 p-4 text-xs font-bold text-slate-500 text-center uppercase tracking-widest">A quiet morning in Sorrento</p>
+                </div>
+
+                <p>Croatia is booming, but Vis is chill. Why? Because it was a military base until 1989. Foreigners weren't allowed in. That isolation saved it. No massive hotel chains ruined the skyline. Instead, you get sleepy fishing villages, stone houses, and old guys drinking wine at 10 AM. It’s the Mediterranean from forty years ago. Rent a scooter and get lost. Visit the vineyards. The local white wine, Vugava, is dangerous in the best way. Nearby, the Blue Cave glows with this crazy neon light, but the real magic is just sitting at a waterfront café in Komiža, eating fresh lobster and doing absolutely nothing.</p>
+
+            </div>
+
+
+            <!--section 1-->
+
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 dark:text-emerald-400 serif mt-16 mb-6">4. Palawan, Philippines </h2>
+
+                <div class="my-16 overflow-hidden rounded-3xl shadow-xl">
+                     img src="../img/quezon-waterfalls-palawan.jpg" class="img-fluid" alt="Hidden rainforest waterfall with emerald pools in Quezon, Palawan, Philippines" caption="A hidden waterfall deep in Quezon’s rainforest showcases Palawan’s untouched natural beauty">
+                    <p class="bg-slate-100 dark:bg-slate-900 p-4 text-xs font-bold text-slate-500 text-center uppercase tracking-widest">A quiet morning in Sorrento</p>
+                </div>
+
+                <p>Okay, Palawan isn't a secret. But the tiny islands around Coron and El Nido? That's where you go. These limestone cliffs shoot straight out of the turquoise water. It looks like a movie set. Skip the big group boat tours. Hire a local fisherman to take you out. You’ll find lagoons hidden behind rock walls and beaches where you’re the only person leaving footprints. Beneath the surface, there are Japanese shipwrecks from WWII. They’re shallow enough to snorkel over. Coral grows on the guns; fish swim through the portholes. It’s haunting and spectacular</p>
+
+            </div>
+
+
+
+            <!--section 1-->
+
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 dark:text-emerald-400 serif mt-16 mb-6">5. Faroe Islands, Denmark </h2>
+
+                <div class="my-16 overflow-hidden rounded-3xl shadow-xl">
+                     <img src="../img/faroe-islands-denmark-waterfall.jpg" class="img-fluid" alt="Møllafossur Waterfall in the Faroe Islands, Denmark flowing from green cliffs into the North Atlantic Ocean" caption="The iconic Møllafossur Waterfall plunging directly into the Atlantic Ocean in the Faroe Islands, Denmark">
+                    <p class="bg-slate-100 dark:bg-slate-900 p-4 text-xs font-bold text-slate-500 text-center uppercase tracking-widest">A quiet morning in Sorrento</p>
+                </div>
+
+                <p>Pack a raincoat. Seriously. Situated between Norway and Iceland, the Faroes are moody, wet, and wind-battered. They are also stunning. The cliffs are vertical walls of green grass dropping into the freezing Atlantic. Waterfalls don't just flow; the wind sometimes blows them back *up* the cliff. It feels like the edge of the world. The hiking is tough but worth it for the views. There are more sheep than people, and the roofs of the houses are made of grass. It’s cozy, though. The food is preserved, salty, and distinct, and the locals are tough but welcoming.</p>
+
+            </div>
+
+
+        </article>
+
+        <aside class="lg:w-1/3 space-y-12">
+            
+            <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-xl text-center">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=300" alt="Elena Author" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg">
+                <h3 class="text-2xl font-bold mb-3 serif">Meet Elena</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-8">Chronic traveler searching for hidden stories across 45 countries.</p>
+                <a href="#" class="inline-block text-xs font-black uppercase tracking-widest text-emerald-900 dark:text-emerald-500 border-b-2 border-emerald-900/10 pb-1 hover:border-amber-600 transition">View All Guides</a>
+            </div>
+
+            <section class="bg-emerald-950 dark:bg-emerald-900 text-white p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-center">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-emerald-800 rounded-full opacity-30"></div>
+                <h3 class="text-3xl font-bold mb-4 serif leading-tight">Follow the Journey</h3>
+                <p class="text-emerald-100/70 text-sm font-medium mb-8 leading-relaxed">Daily inspiration on our social channels.</p>
+
+                <div class="flex flex-col gap-4 relative z-10">
+                    <a href="#" target="_blank" class="group flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/20 hover:border-amber-500 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+                                <i class="fab fa-instagram text-2xl text-white"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="block text-xs font-black uppercase tracking-widest text-amber-500">Instagram</span>
+                                <span class="text-sm font-bold">@TravelIdeasDaily</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right text-xs opacity-50 group-hover:translate-x-1 transition-all"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="group flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/20 hover:border-amber-500 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:-rotate-6 transition-transform">
+                                <i class="fab fa-facebook-f text-2xl text-white"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="block text-xs font-black uppercase tracking-widest text-amber-500">Facebook</span>
+                                <span class="text-sm font-bold">TravelIdeasDaily</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right text-xs opacity-50 group-hover:translate-x-1 transition-all"></i>
+                    </a>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="bg-slate-900 dark:bg-slate-950 text-slate-400 py-24 px-4 transition-colors border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+            
+            <div class="md:col-span-4 space-y-8 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <div class="bg-emerald-600 p-1.5 rounded-lg">
+                        <i class="fas fa-compass text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white serif">TravelIdeasDaily</span>
+                </div>
+                <p class="text-sm leading-loose opacity-70 max-w-xs mx-auto md:mx-0">
+                    Curating breathtaking experiences for the modern explorer. Inspiring sustainable global travel.
+                </p>
+            </div>
+            
+            <div class="md:col-span-2 text-center md:text-left">
+                <h5 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-[10px]">Explore</h5>
+                <ul class="space-y-4 text-sm font-bold">
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Destinations</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Travel Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2 text-center md:text-left">
+                <h5 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-[10px]">Journal</h5>
+                <ul class="space-y-4 text-sm font-bold">
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Latest Stories</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 flex flex-col items-center md:items-end">
+                <h5 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-[10px]">Social Connect</h5>
+                <div class="flex gap-4">
+                    <a href="#" class="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center hover:bg-amber-600 hover:-translate-y-1 transition-all text-white shadow-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center hover:bg-amber-600 hover:-translate-y-1 transition-all text-white shadow-lg"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-widest opacity-40 mt-12">© 2025 TravelIdeasDaily Media</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Logic
+        const toggles = [document.getElementById('dark-mode-toggle'), document.getElementById('dark-mode-toggle-mobile')];
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        toggles.forEach(btn => {
+            btn.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            });
+        });
+
+        // Mobile Menu Logic
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        // Animation Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('header, h2, blockquote, .my-16, aside, footer').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
